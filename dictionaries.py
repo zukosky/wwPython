@@ -30,4 +30,6 @@ print(signalsFromScratch.values())
 #Looping through all of the keys and values in a dictionary
 for key,value in signals.items():
     print(key + ": " + "\t" + value)
+for key,value in houseColors.items():
+    print(key + ": " + "\t" + value)
 
