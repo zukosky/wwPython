@@ -33,3 +33,11 @@ for key,value in signals.items():
 for key,value in houseColors.items():
     print(key + ": " + "\t" + value)
 
+#Print the number of  key value pairs
+print("Number of  elements: " +  str(len(signals)))
+
+# Copying a dictionary
+signalsCopy = signals.copy()
+
+#Emptying a dictionary
+signalsCopy.clear
