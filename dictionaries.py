@@ -55,7 +55,8 @@ signalsCopy.clear
 #############################################################################################
 ################################   NESTING   ################################################
 #############################################################################################
-# Example of lists of dictionaries
+# Example of lists of dictionaries. Used when each dictionary contains many kinds of information
+# about the same object.  E.g. everything about one user.  List of dictionary becomes a list of users.
 print("Creating a list of dictionaries...")
 signal1 = {'model':'MD11',
            'year':'2010',
@@ -71,3 +72,28 @@ signalsList = [signal1, signal2, signal3]
 print("Values within the list of dictionaries:")
 for signal in signalsList:
     print(signal.values())
+
+#example of dictionary with lists
+signal4 = {'model':'777',
+           'year':'2016',
+           'signalStrength':'18',
+           'stops':['0RD','PRV','PDX','LGA']
+}
+for values in signal4.values():
+    print(values)
+
+#Example of dictionary within a dictionary
+
+planes = { '777': {
+    'engines':2,
+    'passengers':'350'
+},
+ 'MD11': {
+    'engines':3,
+    'passengers':'300'
+}
+}
+
+for key in planes.keys():
+    print(key)
+    print(planes[key])
