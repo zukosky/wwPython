@@ -29,3 +29,29 @@ for nIndex in range(0,15):
 #Using xrange instead of range.  Generates the numbers as needed instead of all at once
 for nIndex in xrange(0,12):
 	print(nIndex)
+
+#Strings can also be iterable
+strList = ['red','green','blue','yellow']
+for thisColor in strList:
+	print(thisColor)
+
+#Iterating over lists of lists
+strList = [['fucia','indigo','pink'],['blue','navy','saffiron']]
+for  thisColor in  strList:
+	for subColor in thisColor:
+		print(subColor)
+
+
+### WHILE LOOP
+
+strList = ['red','green','blue','yellow']
+print("Testing first while loop")
+nIndex=0
+thisColor = strList[nIndex]
+while thisColor != 'yellow':
+	print(thisColor)
+	nIndex = nIndex + 1
+	thisColor =  strList[nIndex]
+
+#### CASE STATEMENT
+# Doesn't exist!
