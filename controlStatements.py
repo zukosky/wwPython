@@ -26,8 +26,8 @@ for nIndex in range(0,15):
 	if nIndex==7:
 		break
 
-#Using xrange instead of range.  Generates the numbers as needed instead of all at once
-for nIndex in xrange(0,12):
+#Using xrange instead of range in python2. It was renamed range.  Generates the numbers as needed instead of all at once
+for nIndex in range(0,12):
 	print(nIndex)
 
 #Strings can also be iterable
