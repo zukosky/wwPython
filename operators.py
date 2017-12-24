@@ -10,10 +10,13 @@ print("Multiplication: ", '%.2f' % (fval1 * fval2))
 print("Division: ", '%.2f' % (fval1 / fval2))
 print("Exponentiation: ", '%.2f' % (fval1 ** 2))
 print("Negation: ", -fval1)
+print("Modulo division  5 % 2=", (5 % 2))
+print("Floor division (integer division) 3 // 2=", (3 // 2))
 
-#############################################################################################
+
+####################################################
 ##################   LOGICAL OPERATORS  ########
-#############################################################################################
+#####################################################
 
 lval1 = True
 lval2 = False
@@ -26,3 +29,13 @@ print('Magnitude Comparisons (<): ', (fval1 < fval2))
 print('Magnitude Comparisons (<=): ', (fval1 <= fval2))
 print('Magnitude Comparisons (>): ', (fval1 > fval2))
 print('Magnitude Comparisons (>=): ', (fval1 >= fval2))
+
+####################################################
+##################  BITWISE OPERATORS  ########
+#####################################################
+
+print("bitwise or 2 | 1 =",(2 | 1))
+print("bitwise and 2 & 1 =",(2 & 1))
+print("bit shift left one bit 2 << 1 =",(2 << 1))
+print("bit shift left three bits 2 << 3 =",(2 << 3))
+print("bit shift right one bit 2 >> 1 =",(2 >> 1))
