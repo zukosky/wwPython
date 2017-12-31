@@ -71,3 +71,9 @@ signalsList = [signal1, signal2, signal3]
 print("Values within the list of dictionaries:")
 for signal in signalsList:
     print(signal.values())
+
+#Create a dictionary from two lists
+oui=['oui1','oui2','oui3']
+manu=['apple','cisco','intel']
+ouiRef = dict(zip(oui,manu))
+print(ouiRef)
