@@ -19,27 +19,26 @@ for nIndex in range(0,6):
 #while True:
 #	print("Printing forever")
 #Note, in order to continue out of an exception, the while needs to be outside of the try block
-try:
-	while True:
+while True:
+	try:
 		print("printing forever")
 		time.sleep(1)
 		ranNum = random.randint(1,11)
 		print ("Random Number: %s" % ranNum)
 		div = 5 / (5-ranNum)
 #		continue  this is not necessary
-except KeyboardInterrupt:
-	print("Keyboard interrupt exception caught")
-	e = sys.exc_info()[0]
-	print("Error: %s" % e)
-	sys.exit()
-except ZeroDivisionError:
-	print("Zero Division error")
-	e = sys.exc_info()[0]
-	print("Error: %s" % e)
-	continue
-#	sys.exit()
-except:
-	print("general exception caught")
-	e = sys.exc_info()[0]
-	print("Error: %s" % e)
-	sys.exit()
+	except KeyboardInterrupt:
+		print("Keyboard interrupt exception caught")
+		e = sys.exc_info()[0]
+		print("Error: %s" % e)
+		sys.exit()
+	except ZeroDivisionError:
+		print("Zero Division error")
+		e = sys.exc_info()[0]
+		print("Error: %s" % e)
+#		sys.exit() WIthout sys.exit() will run forever.
+	except:
+		print("general exception caught")
+		e = sys.exc_info()[0]
+		print("Error: %s" % e)
+		sys.exit()
