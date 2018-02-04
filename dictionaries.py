@@ -88,6 +88,11 @@ signal4 = {'model':'777',
 for values in signal4.values():
     print(values)
 
+print("Another way to print key,value")
+
+for x in signal4:
+    print x,signal4[x]
+
 #Example of dictionary within a dictionary
 
 planes = { '777': {
@@ -104,3 +109,16 @@ for key in planes.keys():
     print(key)
     print(planes[key])
 
+
+##chECKING to see if any elements are in a dictionary
+print("Number of elements in the plane dictionary")
+print(len(planes.keys()))
+
+#Building up a dictionary programatically
+phoneDict = {}
+phoneDict['paz1'] = 'Samsung S6'
+phoneDict['paz2'] = 'Samsung S7'
+phoneDict['klk3'] = 'Samsung S6-Broken'
+
+for row in phoneDict:
+    print row,phoneDict[row]

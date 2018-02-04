@@ -48,3 +48,10 @@ for bike in bicycles:
 #### List comprehension.  Building a list in one line
 squares = [value**2 for value in range(1,15)]
 print(squares)
+
+
+#### Tuple: This is an invariant list
+print("Creating a tuple, and invariant list.  DOne with parenthesis instead of brackets")
+bicycles = ('Trek','Giant','Huffy','Schwinn','Bianchi')
+print(bicycles)
+print("Trying to add a new element to a tuple")
