@@ -74,11 +74,18 @@ print("Values within the list of dictionaries:")
 for signal in signalsList:
     print(signal.values())
 
+#See if a specific model is in our list
+
+print(signalsList[model].values())
 #Create a dictionary from two lists
 oui=['oui1','oui2','oui3']
 manu=['apple','cisco','intel']
 ouiRef = dict(zip(oui,manu))
 print(ouiRef)
+
+#See if I can find a specific oui
+#if 'cisco' in ouiRef['manu'].values() :
+#    print('Cisco is there')
 
 #example of dictionary with lists
 signal4 = {'model':'777',
@@ -123,3 +130,11 @@ phoneDict['klk3'] = 'Samsung S6-Broken'
 
 for row in phoneDict:
     print row,phoneDict[row]
+
+#Checking to see if a given value is in a dictionary
+
+if 'Samsung S7' in phoneDict.values() :
+    print 'Found it'
+
+if 'Samsung SS7' not in phoneDict.values() :
+    print 'SS7 Not there'    
